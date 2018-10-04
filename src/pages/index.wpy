@@ -1,0 +1,33 @@
+<style lang="less">
+
+</style>
+
+<template>
+  <view class="container">
+    <i-button>主页</i-button>
+  </view>
+  <authorize />
+</template>
+
+<script>
+  import wepy from 'wepy'
+  import authorize from '@/components/authorize'
+  export default class Index extends wepy.page {
+    config = {
+      navigationBarTitleText: '主页',
+      usingComponents: {
+        'i-button': '../components/weapp/button/index',
+        'i-modal': '../components/weapp/modal/index'
+      }
+    };
+    components = {
+      authorize: authorize
+    };
+    mixins = [];
+    data = {};
+    computed = {};
+    methods = {};
+    events = {};
+    onLoad() {}
+  }
+</script>
