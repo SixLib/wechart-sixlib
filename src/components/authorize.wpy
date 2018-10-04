@@ -75,23 +75,26 @@
                   iv: detail.iv
                 }
               })
-              const state = store.getState()
-              console.log(state)
+              wepy.showTabBar()
               this.autoShow = false
+              this.$apply()
             }
           })
         }
       }
     }
     onLoad() {
+      let _this = this
       wepy.getSetting({
         success(res) {
           if (res.authSetting['scope.userInfo']) {
             wepy.showTabBar()
-            this.autoShow = false
+            _this.autoShow = false
+            _this.$apply()
           } else {
             wepy.hideTabBar()
-            this.autoShow = true
+            _this.autoShow = true
+            _this.$apply()
           }
         }
       })
