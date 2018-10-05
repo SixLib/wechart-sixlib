@@ -12,6 +12,7 @@
 <script>
   import wepy from 'wepy'
   import 'wepy-async-function'
+  import config from '@/config'
   import {
     setStore
   } from 'wepy-redux'
@@ -55,6 +56,14 @@
       this.use('requestfix')
     }
     onLaunch() {
+      if (!wx.cloud) {
+        console.error('请使用 2.2.3 或以上的基础库以使用云能力')
+      } else {
+        wx.cloud.init({
+          env: config.database.env,
+          traceUser: true
+        })
+      }
       this.testAsync()
     }
     sleep(s) {

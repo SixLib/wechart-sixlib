@@ -8,8 +8,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"appid": "wx92f2be829b290ecd",
+	"appid": "",
 	"projectname": "sixlib",
 	"miniprogramRoot": "dist/",
-	"condition": {}
+	"condition": {},
+	"cloudfunctionRoot": "cloudfunctionRoot/"
 }
