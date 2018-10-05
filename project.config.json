@@ -1,5 +1,5 @@
 {
-	"description": "A WePY project",
+	"description": "WePY cloud iview-weapp project",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
@@ -9,7 +9,7 @@
 	},
 	"compileType": "miniprogram",
 	"appid": "",
-	"projectname": "sixlib",
+	"projectname": "wepy-cloud-template",
 	"miniprogramRoot": "dist/",
 	"condition": {},
 	"cloudfunctionRoot": "cloudfunctionRoot/"
