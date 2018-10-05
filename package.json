@@ -1,7 +1,7 @@
 {
-  "name": "sixlib",
+  "name": "wepy-cloud-template",
   "version": "0.0.2",
-  "description": "A WePY project",
+  "description": "WePY cloud iview-weapp project",
   "main": "dist/app.js",
   "scripts": {
     "dev": "wepy build --watch",
@@ -14,7 +14,7 @@
     "module-a": false,
     "./src/components/list": "./src/components/wepy-list.wpy"
   },
-  "author": "yangk <614044401@qq.com>",
+  "author": "author",
   "license": "MIT",
   "dependencies": {
     "redux": "^3.7.2",
